@@ -440,7 +440,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &212786341
 RectTransform:
   m_ObjectHideFlags: 0
@@ -509,7 +509,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -584,7 +584,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1073,11 +1073,11 @@ GameObject:
   - component: {fileID: 669000929}
   m_Layer: 5
   m_Name: OptionsMenu
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &669000929
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1192,7 +1192,7 @@ GameObject:
   - component: {fileID: 887967401}
   - component: {fileID: 887967400}
   m_Layer: 5
-  m_Name: Text
+  m_Name: NumberPlanesText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1778,6 +1778,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1213743591}
   - component: {fileID: 1213743592}
+  - component: {fileID: 1213743593}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -1854,7 +1855,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 10
   m_WholeNumbers: 1
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -1870,6 +1871,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1213743593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213743590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7591044c9b76d884c9436c8591b66e45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1419524056
 GameObject:
   m_ObjectHideFlags: 0
@@ -1884,7 +1897,7 @@ GameObject:
   - component: {fileID: 1419524058}
   m_Layer: 5
   m_Name: ValueText
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1920,6 +1933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63417976418a8074cba30ce7ad087fad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  valueText: {fileID: 0}
 --- !u!114 &1419524059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2191,7 +2205,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2266,7 +2280,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2356,6 +2370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1841083302}
   - component: {fileID: 1841083303}
+  - component: {fileID: 1841083304}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -2429,10 +2444,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 1570168613}
   m_HandleRect: {fileID: 1518915915}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 1
   m_MaxValue: 10
   m_WholeNumbers: 1
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -2448,6 +2463,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1841083304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841083301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7591044c9b76d884c9436c8591b66e45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1888101821
 GameObject:
   m_ObjectHideFlags: 0
@@ -2498,7 +2525,7 @@ GameObject:
   - component: {fileID: 1964936563}
   m_Layer: 5
   m_Name: ValueText
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2576,6 +2603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63417976418a8074cba30ce7ad087fad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  valueText: {fileID: 0}
 --- !u!1 &1984286546
 GameObject:
   m_ObjectHideFlags: 0
@@ -2588,7 +2616,7 @@ GameObject:
   - component: {fileID: 1984286549}
   - component: {fileID: 1984286548}
   m_Layer: 5
-  m_Name: NbQuadcopters
+  m_Name: NbQuadcoptersText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

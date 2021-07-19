@@ -5,15 +5,14 @@ using UnityEngine.UI;
 
 public class ShowValueScript : MonoBehaviour
 {
-    Text valueText;
-    // Start is called before the first frame update
+    public Text valueText;
+
     void Start()
     {
         valueText = GetComponent<Text>();
-        
+
     }
 
-    // Update is called once per frame
     public void textUpdate(float value)
     {
         valueText.text = value + "";
