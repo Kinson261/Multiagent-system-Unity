@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class getSliderValue : MonoBehaviour
+public class getSliderValueMQ9 : MonoBehaviour
 {
     public Slider slider;
     public int sliderValStart;
@@ -34,11 +34,11 @@ public class getSliderValue : MonoBehaviour
     {
         if (diff > 0)
         {
-            objectToDuplicate = GameObject.Find("Full_Mav");
+            objectToDuplicate = GameObject.Find("Full_MQ-9");
             Instantiate(objectToDuplicate, new Vector3(i * 30.0F, 0 * 30.0F, 0 * 30.0F), Quaternion.identity);
             i++;
         }
-            
+
 
         //if (diff > 0)
         //{
@@ -55,12 +55,12 @@ public class getSliderValue : MonoBehaviour
     {
         if (diff < 0)
         {
-           objectToDuplicate = GameObject.Find("Full_Mav(Clone)");
+            objectToDuplicate = GameObject.Find("Full_MQ-9(Clone)");
             Destroy(objectToDuplicate, 1.0F);
             //for (int i = diff; i > 0; i--)
-           //{
-              // Destroy(objectToDuplicate, 1.0F);
-           //}
+            //{
+            // Destroy(objectToDuplicate, 1.0F);
+            //}
         }
     }
 
