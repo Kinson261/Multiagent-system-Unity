@@ -13,7 +13,7 @@ public class ShowValueScript : MonoBehaviour
 
     }
 
-    public void textUpdate(float value)
+    public void textUpdate(int value)
     {
         valueText.text = value + "";
     }
