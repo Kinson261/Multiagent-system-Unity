@@ -27,13 +27,13 @@ public class AirplaneController : MonoBehaviour
     bool brake = false;
 
     AircraftPhysics aircraftPhysics;
-    Rotator propeller;
+    //Rotator propeller;
 
     private void Start()
     {
         aircraftPhysics = GetComponent<AircraftPhysics>();
-        propeller = FindObjectOfType<Rotator>();
-        SetThrust(0);
+        //propeller = FindObjectOfType<Rotator>();
+        SetThrust(20000);
     }
 
     private void Update()
@@ -41,14 +41,14 @@ public class AirplaneController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
 
         if (Input.GetKey(KeyCode.Space))
         {
             SetThrust(thrustPercent + thrustControlSensitivity);
         }
-        propeller.speed = thrustPercent * 1500f;
+        //propeller.speed = thrustPercent * 1500f;
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
