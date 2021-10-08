@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Wing
+  - Plane
+  - Drone
   layers:
   - Default
   - TransparentFX
